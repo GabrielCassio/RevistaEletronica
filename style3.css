@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Nova Mono', monospace;
+}
+
+body{
+    font-size: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header-1{
+    background-color:#0cc945;
+    width: 100%;
+    border-bottom: 3px solid #efefef;
+}
+
+.organization{
+    margin:0 auto;
+    width: 980px;
+    position: relative;
+    padding: 25px;
+}
+
+.nome-text{
+    font-weight: 400;
+    font-size: 12px ;
+    color:rgb(255, 255, 255);
+    font-style: italic;
+    text-shadow: 4px 1px #969191;
+}   
+
+
+.content-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-1-1{
+    font-weight: 800;
+    font-size: 40px ; 
+    color: black;
+    width: 75%;
+}
+
+.background-image{
+    background-image: url("img/tech-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.embded-video{
+    width: 356px;
+    height: 200px;
+    margin: 20px; 
+}
+
+.organization-2{
+    margin:0 auto;
+    width: 980px;
+    position: relative;
+    padding: 25px;
+}
+
+.footer-1{
+    background-color: #0cc945;
+    width: 100%;
+    border-top: 3px solid #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self:center;
+}
+
+.rodape-revista-texto{
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 28px;
+    width: 70%;
+    float: left;
+    text-shadow: 2px 1px #969191;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgb(0,0,0,0.25); 
+}
+
+.footer-images{
+    width: 25%;
+    float: right;
+}
+
+.rodape-logo-if{
+    height: 110px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgb(0,0,0,0.25);  
+    border: 1px solid black; 
+}
+
+.rodape-logo-elen{
+    height: 110px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgb(0,0,0,0.25);
+}
+
