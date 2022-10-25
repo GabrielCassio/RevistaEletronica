@@ -52,7 +52,7 @@ html, body{
     font-weight: 800;
     font-size: 2.1em ; 
     color: black;
-    width: 75%;
+    width: 80%;
 }
 .background-image{
     background-image: url("img/tech-image.jpg");
@@ -111,18 +111,25 @@ html, body{
 }
 
 /*Adaptação para mobile*/
-@media only screen and (min-device-width : 320px)
-and (max-device-width : 480px) and (orientation: portrait){
+@media screen and (min-device-width : 320px)
+and (max-device-width : 480px){
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .background-image{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 10px;
     }
+    .content-1-1{
+        width: 320px;
+    }
 }
 
 @media only screen and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
+and (max-device-width : 1024px) {
     
 }
