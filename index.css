@@ -20,6 +20,7 @@ html, body{
     overflow-x: hidden;
 }
 /**/
+
 .organization{
     margin:0 auto;
     width: 980px;
@@ -32,28 +33,64 @@ html, body{
     border-bottom: 3px solid #efefef;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nome-text{
-    font-weight: 400;
-    font-size: 0.7em ;
+    font-size: 0.5em;
     width: 80%;
     color:rgb(255, 255, 255);
     font-style: italic;
-    text-shadow: 4px 1px #969191;
+    text-shadow: 2px 1px #969191;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }   
-.content-1{
+.header-images{
+    float: right;
+    width: 20%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-images h3{
+    margin-right: 5px;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px #969191;
+}
+.header-images ul{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-images ul li{
+    margin: 5px;
+}
+
+.content{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-1
+{
+    display:flex;
     flex-direction: column;
 }
-.content-1-1{
-    font-weight: 800;
-    font-size: 2.1em ; 
+
+.content-1 h2{
+    font-size: 2em; 
     color: black;
-    width: 80%;
 }
+
+.content-1 p{
+    font-size: 1em;
+    color: black;
+}
+
 .background-image{
     background-image: url("img/tech-image.jpg");
     background-position: center center;
@@ -83,11 +120,10 @@ html, body{
 }
 .rodape-revista-texto{
     color: white;
-    font-weight: 550;
-    font-size: 16px;
+    font-size: 1em;
     margin-top: 5px;
     padding: 28px;
-    width: 70%;
+    width: 75%;
     float: left;
     text-shadow: 2px 1px #969191;
     border: 1px solid black;
@@ -95,7 +131,7 @@ html, body{
     box-shadow: 4px 5px 4px rgb(0,0,0,0.25); 
 }
 .footer-images{
-    width: 25%;
+    width: 15%;
     float: right;
 }
 .rodape-logo-if{
@@ -104,28 +140,22 @@ html, body{
     box-shadow: 4px 5px 4px rgb(0,0,0,0.25);  
     border: 1px solid black; 
 }
-.rodape-logo-elen{
-    height: 110px;
-    border-radius: 10px;
-    box-shadow: 4px 5px 4px rgb(0,0,0,0.25);
-}
 
 /*Adaptação para mobile*/
 @media screen and (max-width : 480px){
     html, body{
         width: 100%;
         overflow-x: hidden;
-        overflow-y: hidden;
     }
 
-    .content-1-1{
-        font-size: 20px;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .nome-text{
+
     }
 
     .background-image{
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 100px;
     }
     .content-1-1{
@@ -133,7 +163,4 @@ html, body{
     }
 }
 
-@media only screen and (min-width : 768px)
-and (max-width : 1024px) {
-    
-}
+
