@@ -109,7 +109,7 @@ html, body{
     position: relative;
     padding: 25px;
 }
-.footer-1{
+.footer{
     background-color: #0cc945;
     width: 100%;
     border-top: 3px solid #efefef;
@@ -118,7 +118,7 @@ html, body{
     justify-content: space-around;
     align-self:center;
 }
-.rodape-revista-texto{
+.footer-1{
     color: white;
     font-size: 1em;
     margin-top: 5px;
@@ -129,6 +129,9 @@ html, body{
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgb(0,0,0,0.25); 
+}
+.footer-1 p{
+    text-align: center;
 }
 .footer-images{
     width: 15%;
@@ -142,25 +145,43 @@ html, body{
 }
 
 /*Adaptação para mobile*/
-@media screen and (max-width : 480px){
+@media screen and (max-device-width: 480px){
     html, body{
         width: 100%;
         overflow-x: hidden;
+        scrollbar-width:none;
+        overflow-y: scroll;
     }
-
-    ::-webkit-scrollbar{
-        display: none;
+    /**/
+    .header-1{
+        font-size: 1.1em;
     }
-    .nome-text{
-
+    .content-1 h2{
+        font-size: 1.1em;
     }
-
+    .content-1 p{
+        font-size: 0.8em;
+    }
     .background-image{
         height: 100px;
     }
-    .content-1-1{
-        width: 320px;
+
+    .organization-2{
+        display: flex;
+        flex-direction: column;
     }
+    .footer-1{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .footer-images{
+        width: 75%;
+    }
+    .rodape-logo-if{
+        width: 100%;
+        margin:auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
 }
-
-
