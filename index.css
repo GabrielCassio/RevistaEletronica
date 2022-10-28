@@ -10,14 +10,21 @@
 body{
     font-size: 100%;
     background-color: white;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
 }
 html, body{
     width: 100%;
     overflow-x: hidden;
+}
+/**/
+.body{
+    min-height: calc(100vh - 40px);
+    padding-bottom: 40px;
+}
+footer{
+    line-height: 30px ;
 }
 /**/
 
@@ -33,11 +40,11 @@ html, body{
     border-bottom: 3px solid #efefef;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .nome-text{
     font-size: 0.5em;
-    width: 80%;
+    width: 90%;
     color:rgb(255, 255, 255);
     font-style: italic;
     text-shadow: 2px 1px #969191;
@@ -107,58 +114,74 @@ html, body{
     width: 980px;
     position: relative;
     padding: 25px;
+
 }
 .footer{
     background-color: #0cc945;
     width: 100%;
     border-top: 3px solid #efefef;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-self:center;
+    align-items: center;
+    justify-content: center;
 }
+/**/
 .footer-1{
     color: white;
-    font-size: 1em;
-    margin-top: 5px;
-    padding: 28px;
+    margin:auto;
+    padding: 8px 0px 10px 70px;
     width: 75%;
     float: left;
+}
+.footer-1{
     text-shadow: 2px 1px #969191;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 4px 5px 4px rgb(0,0,0,0.25); 
+    box-shadow: 4px 5px 4px rgb(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
 }
 .footer-1 p{
-    text-align: center;
+    font-size: 14px;
+    text-align: justify;
 }
 .footer-images{
-    width: 15%;
+    width: 20%;
+    margin: auto;
     float: right;
 }
+.footer-images p{
+    display: none;
+}
 .rodape-logo-if{
-    height: 110px;
+    height: 80px;
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgb(0,0,0,0.25);  
     border: 1px solid black; 
 }
 
 /*Adaptação para mobile*/
-@media screen and (max-device-width: 480px){
+@media screen and (max-device-width: 490px){
     html, body{
         width: 100%;
         overflow-x: hidden;
         scrollbar-width:none;
         overflow-y: scroll;
     }
+    .body{
+        min-height: calc(100vh - 5px);
+        padding-bottom: 20px;
+    }
     /**/
     .header-1{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .header-images-1{
         display: none;
     }
     /**/
+    .content{
+        margin-bottom: 2px;
+    }
     .content-1 h2{
         font-size: 1.1em;
     }
@@ -166,25 +189,21 @@ html, body{
         font-size: 0.8em;
     }
     .background-image{
-        height: 100px;
+        height: 125px;
     }
     /**/
-    .organization-2{
-        display: flex;
-        flex-direction: column;
-    }
     .footer-1{
-        margin: auto;
-        margin-bottom: 10px;
+        display: none;
     }
     .footer-images{
-        width: 75%;
-    }
-    .rodape-logo-if{
         width: 100%;
-        margin:auto;
-        padding-left: 100px;
-        padding-right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape-logo-if{
+        height: 50px;
     }
 
 }
