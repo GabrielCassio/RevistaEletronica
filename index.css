@@ -26,14 +26,8 @@ html, body{
 footer{
     line-height: 20px ;
 }
-/**/
 
-.organization{
-    margin:0 auto;
-    width: 980px;
-    position: relative;
-    padding: 25px;
-}
+/*Header classes*/
 .header-1{
     background-color:#0cc945;
     width: 100%;
@@ -42,38 +36,40 @@ footer{
     align-items: center;
     justify-content:space-between;
 }
-.nome-text{
+.header-content{
+    /*Typography*/
     font-size: 0.5em;
-    width: 90%;
     color:rgb(255, 255, 255);
     font-style: italic;
     text-shadow: 2px 1px #969191;
+    /*Box-model*/
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
 }   
-.header-images-1-2{
+.header-desktop{
     float: right;
     width: 25%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.header-images-1-2 h3{
+.header-desktop h3{
     margin-right: 5px;
     color:rgb(255, 255, 255);
     text-shadow: 1px 1px #969191;
 }
-.header-images-1-2 ul{
+.header-desktop ul{
     width: 25%;
     display: flex;
     flex-direction: row;
 }
-.header-images-1-2 ul li{
+.header-desktop ul li{
     margin: 5px;
 }
-.header-images-1-1{
-    visibility: collapse;
+.header-mobile{
+    display: none;
 }
 /**/
 .content{
@@ -109,48 +105,49 @@ footer{
     margin: 20px; 
 }
 /**/
-.organization-2{
+.organization{
     margin:0 auto;
     width: 980px;
     position: relative;
-    padding: 20px;
+    padding: 25px;
+}
+/*footer classes*/
+.footer{
+    /*Visual*/
+    background-color: #0cc945;
+    border-top: 3px solid #efefef;
+    /*Box-model*/
     display: flex;
     flex-direction: row;
-
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
 }
-.footer{
-    background-color: #0cc945;
-    width: 100%;
-    border-top: 3px solid #efefef;
-    display: flex;
-}
-/**/
-.footer-1{
-    color: white;
-}
-.footer-1{
-    text-shadow: 2px 1px #969191;
+.footer-desktop{
+    /*Visual*/
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgb(0,0,0,0.25);
 }
-.footer-1 p{
+.footer-desktop p{
+    /*Typography*/
     font-size: 14px;
     text-align: justify;
+    color: white;
+    text-shadow: 2px 1px #969191;
+    /*Box-model*/
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
 }
-.footer-images{
-    margin: auto;
-
+.footer-mobile{
+    display: none;
 }
-.footer-2{
-    visibility: collapse;
-}
-#rodape-logo-if{
+.footer-logo-if{
+    /*Box-model*/
     padding: 10px;
     height: 92px;
+    /*Visual*/
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgb(0,0,0,0.25);  
     border: 1px solid black; 
@@ -177,11 +174,10 @@ footer{
         font-size: 1em;
     }
     .header-images-1-2{
-        visibility: collapse;
+        display: none;
     }
     .header-images-1-1{
-        visibility: visible;
-        
+        display: block; 
     }
     /**/
     .content{
@@ -200,22 +196,21 @@ footer{
 }
 
 @media only screen and (max-width: 680px){
-    .organization-2{
+    /*Footer classes for mobile*/
+    .footer{
+        /*Box-modeel*/
         display: flex;
         flex-direction: column-reverse;
-        flex-wrap: wrap;
+    }
+    .footer-mobile{
+        /*Box-model*/
+        display: block;
+        /*Typography*/
+        font-size: 0.8em;
+    }
+    .footer-desktop{
+        display: none;
     }
 
-    .footer-1{
-        display: none;
-        margin-bottom:10px;
-    }
-    .footer-2{
-        font-size: 0.8em;;
-        display: inline-flex;
-        justify-content: center;
-    }
-    #rodape-logo-if{
-        height: 50px;
-    }
+
 }
