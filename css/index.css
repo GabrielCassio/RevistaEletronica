@@ -40,7 +40,6 @@ footer{
 }
 .header-content{
     /*Typography*/
-    font-size: 0.5em;
     color:rgb(255, 255, 255);
     font-style: italic;
     text-shadow: 2px 1px #969191;
@@ -48,17 +47,19 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width:90%;
 }   
+.header-content h1{
+    font-size: 25px;
+}
 .header-desktop{
-    float: right;
-    width: 25%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .header-desktop h3{
-    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 800;
     color:rgb(255, 255, 255);
     text-shadow: 1px 1px #969191;
 }
@@ -77,14 +78,19 @@ footer{
 .content-section-1{
     /*Box-model*/
     width: 90%;
-    margin: 30px 0 30px 90px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    margin: 2% 5% 2% 7%;
+    
     /*Position*/
 }
-
+.content-section-1-h2 h2{
+    font-size: 35px;
+    font-weight: 800;
+}
+.font
 .background-image{
-    background-image: url("img/tech-image.jpg");
+    background-image: url("../img/tech-image.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +171,6 @@ footer{
     .header-mobile{
         display: block; 
     }
-
 }
 @media only screen and (max-width: 490px){
     .content-section-1{
