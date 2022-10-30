@@ -33,15 +33,12 @@ footer{
     border-bottom: 3px solid #efefef;
     /*Box-model*/
     width: 100%;
-}
-.header-content{
-    /*Box-model*/
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width:90%;
-}   
+}
+
 .header-content-text h1{
     /*Typography*/
     font-size: 25px;
@@ -54,8 +51,6 @@ footer{
     flex-direction: row;
     align-items: center;
     /*Positioning*/
-    position: relative;
-    right: -20px;
 }
 .header-desktop h3{
     font-size: 15px;
@@ -64,7 +59,6 @@ footer{
     text-shadow: 1px 1px #969191;
 }
 .header-desktop ul{
-    width: 25%;
     display: flex;
     flex-direction: row;
 }
@@ -204,26 +198,17 @@ footer{
     .header-desktop{
         display: none;
     }
-    .header-mobile{
+    .header-mobile {
         display: block; 
+    }
+    .header-mobile button{
+        box-shadow: 4px 3px 4px rgb(0,0,0,0.25);
     }
 }
 @media only screen and (max-width: 490px){
     /*Header classes*/
-    .header-content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
-        /**/
-    }
     .header-content-text h1{
-        font-size: 15px;
-    }
-    .header-mobile{
-        position: relative;
-        right: -30px;
+        font-size: 20px;
     }
     /*Section classes*/
     .content-section-1{
@@ -242,5 +227,14 @@ footer{
     #navbarDropdown{
         position: relative;
         
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .header-content-text h1{
+        font-size: 15px;
+    }
+    .header-mobile img{
+        height: 20px;
     }
 }
