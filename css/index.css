@@ -45,8 +45,9 @@ footer{
 .header-content-text h1{
     /*Typography*/
     font-size: 25px;
-    font-style: italic;
+    font-weight: 800;
     color:rgb(255, 255, 255);
+    text-shadow: 2px 1px #969191;
 }
 .header-desktop{
     display: flex;
