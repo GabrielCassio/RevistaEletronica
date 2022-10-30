@@ -30,32 +30,31 @@ footer{
 /*Header classes*/
 .header{
     background-color:#0cc945;
-    width: 100%;
     border-bottom: 3px solid #efefef;
     /*Box-model*/
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    padding: 30px;
+    width: 100%;
 }
 .header-content{
-    /*Typography*/
-    color:rgb(255, 255, 255);
-    font-style: italic;
-    text-shadow: 2px 1px #969191;
     /*Box-model*/
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width:90%;
 }   
-.header-content h1{
+.header-content-text h1{
+    /*Typography*/
     font-size: 25px;
+    font-style: italic;
+    color:rgb(255, 255, 255);
 }
 .header-desktop{
     display: flex;
     flex-direction: row;
     align-items: center;
+    /*Positioning*/
+    position: relative;
+    right: -20px;
 }
 .header-desktop h3{
     font-size: 15px;
@@ -69,7 +68,19 @@ footer{
     flex-direction: row;
 }
 .header-desktop ul li{
-    margin: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.header-desktop button{
+    /*Box-model*/
+    border-radius: 50%; 
+    height: 45px;
+    width: 45px;
+    /*Visual*/
+    background-color: #0cc945;
+    border: 2px solid green;
+    box-shadow: 4px 5px 4px rgb(0,0,0,0.25);
 }
 .header-mobile{
     display: none;
@@ -146,60 +157,6 @@ footer{
 }
 
 /*Adaptação para mobile*/
-@media only screen and (max-width: 600px){
-    html, body{
-        width: 100%;
-        overflow-x: hidden;
-        scrollbar-width:none;
-        overflow-y: scroll;
-    }
-    .body{
-        min-height: calc(100vh - 100px);
-        padding-bottom: 130px;
-    }
-    footer{
-        line-height: 20px;
-    }
-
-    /*Header classes*/
-    .header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
-        /**/
-    }
-    .header-content h1{
-        font-size: 15px;
-    }
-    .header-desktop{
-        display: none;
-    }
-    .header-mobile{
-        display: block; 
-    }
-}
-@media only screen and (max-width: 490px){
-    .content-section-1{
-        margin: auto;
-    }
-    .content-section-1 h2{
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .content-section-1 p{
-        font-size: 15px;
-    }
-    .background-image{
-        height: 125px;
-    }
-    #navbarDropdown{
-        position: relative;
-        
-    }
-}
-
 @media only screen and (max-width: 680px){
     /*Footer classes for mobile*/
     .footer{
@@ -225,5 +182,64 @@ footer{
     }
     .footer-logo-if{
         height: 68px;
+    }
+}
+@media only screen and (max-width: 600px){
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+        scrollbar-width:none;
+        overflow-y: scroll;
+    }
+    .body{
+        min-height: calc(100vh - 100px);
+        padding-bottom: 130px;
+    }
+    footer{
+        line-height: 20px;
+    }
+
+    /*Header classes*/
+    .header-desktop{
+        display: none;
+    }
+    .header-mobile{
+        display: block; 
+    }
+}
+@media only screen and (max-width: 490px){
+    /*Header classes*/
+    .header-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        /**/
+    }
+    .header-content-text h1{
+        font-size: 15px;
+    }
+    .header-mobile{
+        position: relative;
+        right: -30px;
+    }
+    /*Section classes*/
+    .content-section-1{
+        margin: auto;
+    }
+    .content-section-1 h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .content-section-1 p{
+        font-size: 15px;
+    }
+    .background-image{
+        height: 125px;
+    }
+    #navbarDropdown{
+        position: relative;
+        
     }
 }
