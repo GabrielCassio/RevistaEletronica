@@ -80,6 +80,14 @@ footer{
 .header-mobile{
     display: none;
 }
+.logo-elen{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 0.5px solid rgb(0, 0, 0, 0.25);
+    box-shadow: 2px 3px 4px rgb(0,0,0,0.25);
+    margin-left: 5px;
+}
 /**/
 .content-section-1{
     /*Box-model*/
@@ -95,7 +103,7 @@ footer{
     font-weight: 800;
 }
 .background-image{
-    background-image: url("../img/tech-image.jpg");
+    background-image: url("../img/imagemsite_7.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,6 +211,12 @@ footer{
     }
     .header-mobile button{
         box-shadow: 4px 3px 4px rgb(0,0,0,0.25);
+    }
+    .user-image{
+        margin-right: 3px;
+        border: 0.5px solid rgb(0, 0, 0, 0.25);
+        border-radius: 50%;
+        box-shadow: 2px 3px 4px rgb(0,0,0,0.25);  
     }
 }
 @media only screen and (max-width: 490px){
