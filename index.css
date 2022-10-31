@@ -219,10 +219,19 @@ footer{
         box-shadow: 4px 3px 4px rgb(0,0,0,0.25);
     }
     .user-image{
+        /*Box-model*/
         margin-right: 3px;
+        /*Visual*/
         border: 0.5px solid rgb(0, 0, 0, 0.25);
         border-radius: 50%;
         box-shadow: 2px 3px 4px rgb(0,0,0,0.25);  
+    }
+    .after-divider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 }
 @media only screen and (max-width: 490px){
@@ -244,10 +253,6 @@ footer{
     }
     .background-image{
         height: 125px;
-    }
-    #navbarDropdown{
-        position: relative;
-        
     }
 }
 
