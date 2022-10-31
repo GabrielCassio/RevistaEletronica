@@ -110,7 +110,7 @@ footer{
     font-weight: 800;
     color: black;
 }
-#background-image{
+.background-image{
     background-image: url(../img/imagemsite_7.jpg);
     background-position: center center;
     background-repeat: no-repeat;
