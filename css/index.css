@@ -93,14 +93,22 @@ footer{
     /*Box-model*/
     width: 90%;
     display: flex;
-    flex-direction: column; 
-    margin: 2% 5% 2% 7%;
-    
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
     /*Position*/
 }
-.content-section-1-h2 h2{
+#content-section-1-0p{
+    font-size: 15px;
+}
+#content-section-1-h2 {
+    margin-top: 0;
+    /*Typography*/
     font-size: 35px;
     font-weight: 800;
+    color: black;
 }
 .background-image{
     background-image: url("../img/imagemsite_7.jpg");
@@ -224,13 +232,14 @@ footer{
     }
     /*Section classes*/
     .content-section-1{
-        margin: auto;
+        margin-left:25px;
+        margin-right: 45px;
     }
-    .content-section-1 h2{
+    #content-section-1-h2{
         font-size: 20px;
         font-weight: 700;
     }
-    .content-section-1 p{
+    #content-section-1-p{
         font-size: 15px;
     }
     .background-image{
