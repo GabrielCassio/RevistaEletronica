@@ -53,6 +53,7 @@ footer{
     /*Positioning*/
 }
 .header-desktop h3{
+    /*Typography*/
     font-size: 15px;
     font-weight: 800;
     color:rgb(255, 255, 255);
@@ -220,18 +221,11 @@ footer{
     }
     .user-image{
         /*Box-model*/
-        margin-right: 3px;
+        margin-right: 5px;
         /*Visual*/
         border: 0.5px solid rgb(0, 0, 0, 0.25);
         border-radius: 50%;
         box-shadow: 2px 3px 4px rgb(0,0,0,0.25);  
-    }
-    .after-divider{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 0;
     }
 }
 @media only screen and (max-width: 490px){
