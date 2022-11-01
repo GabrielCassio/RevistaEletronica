@@ -65,7 +65,6 @@ footer{
 }
 .header-desktop ul li{
     margin: 2px;
-    cursor: pointer;
 }
 
 .header-desktop button{
@@ -97,8 +96,8 @@ footer{
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
     /*Position*/
 }
 #content-section-1-0p{
@@ -170,6 +169,11 @@ footer{
 
 /*Adaptação para mobile*/
 @media only screen and (max-width: 680px){
+    /*Content classes for mobile*/
+    .content-section-1{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     /*Footer classes for mobile*/
     .footer{
         /*Box-modeel*/
@@ -235,8 +239,8 @@ footer{
     }
     /*Section classes*/
     .content-section-1{
-        margin-left:25px;
-        margin-right: 45px;
+        width: 90%;
+        margin-left: 5%;
     }
     #content-section-1-h2{
         font-size: 20px;
