@@ -295,6 +295,7 @@ footer{
     }
 }
 
+
 @media only screen and (max-width: 300px){
     .header-content-text h1{
         font-size: 15px;
