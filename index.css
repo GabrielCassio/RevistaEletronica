@@ -141,10 +141,14 @@ footer{
     margin-bottom: 20px;
     /*Visual*/
     border-radius: 10px;
-    border: 1px solid black
+    border: 1px solid black;
+    box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.25);
 }
 .article section{
+    /*Typography*/
     font-style: italic;
+    /*Box-model*/
+    margin-top: 50px;
 }
 .embded-video{
     width: 356px;
