@@ -117,11 +117,41 @@ footer{
     background-size: cover;
     height: 350px;
 }
+/*Article classes*/
+.article{
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+.article-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article p{
+    text-align: justify;
+    font-size: 15px;
+}
+.entrevistado-image{
+    /*Box-model*/
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*Visual*/
+    border-radius: 10px;
+    border: 1px solid black
+}
+.article section{
+    font-style: italic;
+}
 .embded-video{
     width: 356px;
     height: 200px;
     margin: 20px; 
 }
+/*--------------*/
 /*footer classes*/
 .footer{
     /*Visual*/
@@ -173,6 +203,17 @@ footer{
     .content-section-1{
         margin-left: 5%;
         margin-right: 5%;
+    }
+    /*Article classes for mobile*/
+    .article{
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    .article section{
+        font-style: italic;
+        font-size: 10px;
     }
     /*Footer classes for mobile*/
     .footer{
