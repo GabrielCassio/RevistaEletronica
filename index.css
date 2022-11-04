@@ -97,7 +97,7 @@ footer{
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     /*Position*/
 }
 #content-section-1-0p{
@@ -133,23 +133,19 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    ;
 }
-.article-image figure figcaption{
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 10px;
-    ;
-}
+
 .article p{
+    margin-top: 35px;
+    /*Typography*/
     text-align: justify;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
 }
 .entrevistado-image{
     /*Box-model*/
-    height: 150px;
-    width: 150px;
+    height: 500px;
+    width: 680px;
     margin-top: 20px;
     margin-bottom: 20px;
     /*Visual*/
@@ -218,9 +214,8 @@ footer{
     /*Article classes for mobile*/
     .article{
         margin-top: 30px;
-        margin-left: 5%;
-        margin-right: 5%;
-
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .article section{
         font-style: italic;
@@ -260,7 +255,7 @@ footer{
     }
     .body{
         min-height: calc(100vh - 100px);
-        padding-bottom: 130px;
+        padding-bottom: 50px;
     }
     footer{
         line-height: 20px;
@@ -284,6 +279,11 @@ footer{
         border-radius: 50%;
         box-shadow: 2px 3px 4px rgb(0,0,0,0.25);  
     }
+    /*Article classes*/
+    .entrevistado-image{
+        width: 480px;
+        height: 400px;
+    }
 }
 @media only screen and (max-width: 490px){
     /*Header classes*/
@@ -305,6 +305,11 @@ footer{
     .background-image{
         height: 125px;
     }
+    /*Article classes*/
+    .entrevistado-image{
+        width: 360px;
+        height: 350px;
+    }
 }
 
 
@@ -314,5 +319,9 @@ footer{
     }
     .header-mobile img{
         height: 20px;
+    }
+    .entrevistado-image{
+        width: 240px;
+        height: 210px;
     }
 }
