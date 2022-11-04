@@ -135,6 +135,8 @@ footer{
     align-items: center;
 }
 .article h3{
+    margin-top: 60px;
+    /*Typography*/
     font-size: 20px;
     font-weight: 600;
 }
@@ -152,7 +154,6 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
     /*Visual*/
-    border-radius: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.25);
 }
