@@ -42,7 +42,7 @@ footer{
 .header-content-text h1{
     /*Typography*/
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     color:rgb(255, 255, 255);
     text-shadow: 2px 1px #969191;
 }
@@ -134,13 +134,16 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-
+.article h3{
+    font-size: 20px;
+    font-weight: 600;
+}
 .article p{
     margin-top: 35px;
     /*Typography*/
     text-align: justify;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 550;
 }
 .entrevistado-image{
     /*Box-model*/
