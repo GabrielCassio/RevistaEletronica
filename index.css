@@ -154,6 +154,7 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
     /*Visual*/
+    border-radius: 5px;
     border: 1px solid black;
     box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.25);
 }
@@ -162,6 +163,12 @@ footer{
     font-style: italic;
     /*Box-model*/
     margin-top: 50px;
+}
+.iframe{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
 }
 /*footer classes*/
 .footer{
