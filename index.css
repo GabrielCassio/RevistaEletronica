@@ -41,7 +41,7 @@ footer{
 
 .header-content-text h1{
     /*Typography*/
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
     color:rgb(255, 255, 255);
     text-shadow: 2px 1px #969191;
@@ -120,8 +120,8 @@ footer{
 /*Article classes*/
 .article{
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: justify;
 }
 .article-image{
