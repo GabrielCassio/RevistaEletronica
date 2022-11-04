@@ -147,8 +147,8 @@ footer{
 }
 .entrevistado-image{
     /*Box-model*/
-    height: 500px;
-    width: 680px;
+    height: 350px;
+    width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
     /*Visual*/
@@ -220,10 +220,17 @@ footer{
         margin-left: 10%;
         margin-right: 10%;
     }
+    .article p{
+        font-size: 14px;
+    }
     .article section{
         font-style: italic;
         font-size: 10px;
         ;
+    }
+    .entrevistado-image{
+        width: 480px;
+        height: 400px;
     }
     /*Footer classes for mobile*/
     .footer{
@@ -284,8 +291,8 @@ footer{
     }
     /*Article classes*/
     .entrevistado-image{
-        width: 480px;
-        height: 400px;
+        width: 320px;
+        height: 280px;
     }
 }
 @media only screen and (max-width: 490px){
@@ -310,8 +317,8 @@ footer{
     }
     /*Article classes*/
     .entrevistado-image{
-        width: 360px;
-        height: 350px;
+        width: 320px;
+        height: 280px;
     }
 }
 
