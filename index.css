@@ -150,7 +150,7 @@ footer{
 .entrevistado-image{
     /*Box-model*/
     height: 350px;
-    width: 400px;
+    width: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
     /*Visual*/
@@ -168,6 +168,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 10px;
 }
 /*footer classes*/
@@ -240,6 +241,10 @@ footer{
         width: 480px;
         height: 400px;
     }
+    .iframe iframe{
+        height: 280px;
+        width: 460px;
+    }
     /*Footer classes for mobile*/
     .footer{
         /*Box-modeel*/
@@ -302,6 +307,10 @@ footer{
         width: 320px;
         height: 280px;
     }
+    .iframe iframe{
+        width: 380px;
+        height: 280px;
+    }
 }
 @media only screen and (max-width: 490px){
     /*Header classes*/
@@ -328,8 +337,18 @@ footer{
         width: 320px;
         height: 280px;
     }
+    .iframe iframe{
+        width: 210px;
+        height: 200px;
+    }
 }
 
+@media only screen and (max-width: 360px){
+    .entrevistado-image{
+        width: 250px;
+        height: 200px;
+    }
+}
 
 @media only screen and (max-width: 300px){
     .header-content-text h1{
