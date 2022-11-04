@@ -166,9 +166,9 @@ footer{
 }
 .iframe{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    align-self: center;
-    justify-content: center;
+    margin-top: 10px;
 }
 /*footer classes*/
 .footer{
